@@ -1,0 +1,8 @@
+node_modules
+.svelte-kit
+.git
+.env
+# We explicitly do NOT ignore local.db because we want to ship the seeded database
+# local.db
+build
+.DS_Store
