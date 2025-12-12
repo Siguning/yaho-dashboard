@@ -5,7 +5,7 @@ import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ url }) => {
-	const id = url.searchParams.get('id') || '082';
+	const id = url.searchParams.get('id') || 'ANOM-001';
 
 	const anomaly = await db.query.anomalies.findFirst({
 		where: eq(anomalies.id, id)
